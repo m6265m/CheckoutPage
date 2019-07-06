@@ -317,7 +317,7 @@ li{
     padding-left: 1em;
     font-family: Montserrat, sans-serif;
     letter-spacing: 0.2em;
-    margin-bottom: 2em;
+    /*margin-bottom: 2em;*/
     height: 6vh;
 
 
@@ -587,12 +587,14 @@ input::-webkit-inner-spin-button {
 /*               CARD BOX               */
 
 #cards-box{
-    display: none;
+    visibility: hidden;
     grid-template-columns: 1fr;
     /*grid-template-areas: "ci ci ci" "cf cf cf";*/
-
     margin-top: 1em;
-    transition: 0.5s;
+    /*max-height: 36vh;*/
+    transform: translateY(-200%);
+    transition: transform  0.7s;
+    overflow-x: hidden;
 }
 
 #card-icons{

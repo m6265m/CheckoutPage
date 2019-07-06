@@ -144,6 +144,10 @@
         cursor: pointer;
     }
 
+    #billing-details-container{
+        grid-template-columns: 1fr;
+    }
+
 }
 
 /*              itemdetail wali media */
