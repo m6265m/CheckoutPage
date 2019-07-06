@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Homemade+Apple|Mrs+Saint+Delafield" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/chrome-bootstrap/1.5.0/chrome-bootstrap.min.css'>
+
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="checkoutmedia.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+
+</head>
+<body>
+
+
+<div id="navbar" class="nav-transparent">
+
+    <div id="logodiv">
+        <img src="logo.png" alt="logo">
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li><a class="cool-link" href="#">Home</a></li>
+            <li><a class="cool-link" href="#">About</a></li>
+            <li><a class="cool-link" href="#">Contact</a></li>
+            <li id="pehla"><i class="fas fa-user"></i></li>
+            <li id="doosra"><a class="cool-link" href="#">Sign In</a></li>
+        </ul>
+    </div>
+
+    <div id="hamburger">
+        <button id="menuButton"><i class="fas fa-bars fa-2x"></i></button>
+    </div>
+
+</div>
+<div class="sign-in">
+    <ul>
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#">Sign Up</a></li>
+    </ul>
+</div>
+
+
+
+
+
+<!--    CATEGORIES       -->
+<div id="main-content">
+    <div id="category">
+        <ul id="cat">
+
+            <li><a  class="cool-link" href="#">Abaya</a></li>
+            <li><a  class="cool-link" href="#">Coat</a></li>
+            <li><a  class="cool-link" href="#">Scarves</a></li>
+            <li><a class="cool-link"  href="#">Shoes</a></li>
+            <div id="custom" ><li><a class="cool-link"  href="#">Custom-Made</a></li></div>
+
+        </ul>
+
+    </div>
+
+    <div id="line">
+
+    </div>
+
+
+    <!--        ORDER DETAILS-->
+
+    <div id="images" >
+        <h3>ORDER DETAILS</h3>
+
+        <div id="back-button-container">
+            <div id="back-button">
+                <a href="#"><p>BACK TO CART</p></a>
+            </div>
+           <div id="total-summary"><p>TOTAL PKR 9000/-</p></div>
+
+        </div>
+
+
+<div id="billing-details-container">
+    <div id="billing-details">
+        <div id="billing-details-heading">
+            <h4>Billing Details</h4>
+        </div>
+
+        <div id="name-section">
+
+            <input type="text" name="name" autocomplete="off" required />
+            <label class="label-name" for="name-section">
+                <span class="content-name">NAME</span>
+            </label>
+
+        </div>
+
+        <div id="address-section">
+
+            <input type="text" name="name" autocomplete="off" required />
+            <label class="label-name" for="address-section">
+                <span class="content-name">ADDRESS</span>
+            </label>
+
+        </div>
+
+
+        <div id="mobile">
+
+            <input type="number" name="name" autocomplete="off" required />
+            <label class="label-name" for="mobile">
+                <span class="content-name">MOBILE</span>
+            </label>
+
+        </div>
+
+
+    </div>
+
+    <div id="payment-details">
+        <div id="payment-details-heading">
+            <h4>Payment Details</h4>
+            <div><p>*Delivery will take upto 10 working days.</p></div>
+
+        </div>
+
+        <div id="methods">
+            <p>Payment Method</p>
+
+            <form action="">
+                <input type="radio" name="gender" value="cod" onclick="cardsbox(1)" checked> Cash on Delivery<br>
+                <input type="radio" name="gender" value="card"  onclick="cardsbox(0)"> Card Payment<br>
+            </form>
+
+
+
+            <div id="cards-box">
+
+                <div id="card-icons">
+
+            <div ><i class="fab fa-cc-visa "></i></div>
+            <div ><i class="fab fa-cc-mastercard "></i></div>
+            <div ><i class="fab fa-cc-paypal "></i></div>
+
+                </div>
+
+                <div id="card-form">
+
+                    <div id="card-number">
+
+                        <input type="number" name="name" autocomplete="off" required />
+                        <label class="label-name" for="card-number">
+                            <span class="content-name">CARD NUMBER</span>
+                        </label>
+
+                    </div>
+
+                    <div id="card-month">
+
+                        <input type="number" name="name" autocomplete="off" required />
+                        <label class="label-name" for="card-month">
+                            <span class="content-name">MONTH</span>
+                        </label>
+
+                    </div>
+
+                    <div id="card-year">
+
+                        <input type="number" name="name" autocomplete="off" required />
+                        <label class="label-name" for="card-year">
+                            <span class="content-name">YEAR</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+        <div id="make-payment-container">
+            <div id="make-payment-button">
+                <a href="#"><p>MAKE PAYMENT</p></a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div id="abaya-image">
+        <img src="adult1.png">
+    </div>
+
+
+    <div id="footer-container" >
+        <div id="about">
+            <h3>ABOUT</h3>
+            <p>
+                We offer amazing services to you at your doorstep. We offer amazing services to you at your
+                doorstep,
+                where you can customize your own abaya and so we are doing this so we
+                are gonna do that
+                we bring you an amazing collection of abayas
+                so that you can bring elegance into your life.
+            </p>
+            <p><i class="fas fa-map-marker-alt"></i>     DHA, Phase-I, Karachi, Pakistan</p>
+
+        </div>
+
+        <div id="contact">
+            <h3>CONTACT</h3>
+            <p>
+                <i class="fas fa-envelope"></i>     baitalaneeq@gmail.com<br>
+                <i class="fas fa-phone"></i>     0321-1125699<br>
+                <i class="fas fa-globe"></i>     www.baitalaneeq.com<br><br>
+                <a href="#"><i class="fab fa-facebook"></i></a> <span></span>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        &copy; baitalaneeq.com | Designed by Three Persons
+    </div>
+</div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="checkout.js"></script>
+
+
+</html>
