@@ -587,7 +587,7 @@ input::-webkit-inner-spin-button {
 /*               CARD BOX               */
 
 #cards-box{
-    display: grid;
+    display: none;
     grid-template-columns: 1fr;
     /*grid-template-areas: "ci ci ci" "cf cf cf";*/
 

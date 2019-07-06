@@ -50,7 +50,8 @@ hamburger.addEventListener("click", () => {
 
 function cardsbox(x) {
     if(x==0)
-        document.getElementById("cards-box").style.transform="translateY(100%)";
+        // document.getElementById("cards-box").style.transform="translateY(100%)";
+        document.getElementById("cards-box").style.display='grid';
     else
         document.getElementById("cards-box").style.display='none';
     return;
