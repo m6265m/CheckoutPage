@@ -257,6 +257,9 @@ li{
 
 #total-summary{
     text-align: right;
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 10px;
 }
 
 #back-button{
@@ -589,6 +592,7 @@ input::-webkit-inner-spin-button {
     /*grid-template-areas: "ci ci ci" "cf cf cf";*/
 
     margin-top: 1em;
+    transition: 0.5s;
 }
 
 #card-icons{
